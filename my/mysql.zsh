@@ -1,0 +1,3 @@
+#!/usr/bin/zsh
+
+path=(/usr/local/mysql/bin $path)
