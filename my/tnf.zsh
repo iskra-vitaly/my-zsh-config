@@ -7,6 +7,7 @@ function tnfprj() {
 	cd $tnf_home
 }
 
-function activator() {
-	~/soft/activator-1.0.5/activator
+function activator {
+	print -l $*
+	(~/soft/activator-1.2.2-minimal/activator $*)
 }
