@@ -68,10 +68,9 @@ export JAVA_HOME=`/usr/libexec/java_home`
 source ~/.zsh/my/clj.zsh
 source ~/.zsh/my/funcs.zsh
 source ~/.zsh/my/droid.zsh
-source ~/.zsh/my/.iterm2_shell_integration.zsh
 
 #rvm
-source ~/.zsh/rvm-stuff/rc.zsh
+#source ~/.zsh/rvm-stuff/rc.zsh
 
 
 PERL_MB_OPT="--install_base \"/Users/v_iskra/perl5\""; export PERL_MB_OPT;
