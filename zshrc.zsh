@@ -70,7 +70,7 @@ source ~/.zsh/my/funcs.zsh
 source ~/.zsh/my/droid.zsh
 
 #rvm
-#source ~/.zsh/rvm-stuff/rc.zsh
+source ~/.zsh/rvm-stuff/rc.zsh
 
 
 PERL_MB_OPT="--install_base \"/Users/v_iskra/perl5\""; export PERL_MB_OPT;
@@ -81,3 +81,6 @@ export LC_ALL=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
