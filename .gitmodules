@@ -1,3 +1,6 @@
 [submodule "my/maven-zsh-completion"]
     path = my/maven-zsh-completion
     url = git://github.com/Echos/maven-zsh-completion.git
+[submodule "my/conda-zsh-completion"]
+	path = my/conda-zsh-completion
+	url = https://github.com/esc/conda-zsh-completion.git
