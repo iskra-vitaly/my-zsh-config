@@ -15,8 +15,8 @@ alias grep='grep --color=auto'
 bindkey -e
 
 # Keep 9999 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=9999
-SAVEHIST=9999
+HISTSIZE=99999
+SAVEHIST=99999
 HISTFILE=~/.zsh_history
 
 fpath=(~/.zsh/Completion $fpath)
@@ -53,7 +53,7 @@ autoload -Uz vcs_info
 
 #java
 
-export JAVA_HOME=`/usr/libexec/java_home`
+[[ -x /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home`
 
 # . ~/.zsh/my/play.zsh
 # . ~/.zsh/my/freiminuten.zsh
