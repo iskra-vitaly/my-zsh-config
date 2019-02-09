@@ -12,6 +12,12 @@ for COLOR in RED GREEN YELLOW WHITE BLACK CYAN; do
     eval PR_BRIGHT_$COLOR='%{$fg_bold[${(L)COLOR}]%}'
 done                                                
 PR_RESET="%{${reset_color}%}";
+i_color=90
+for COLOR in BLACK RED GREEN YELLOW BLUE MAGENTA CYAN WHITE; do
+    eval PR_REAL_BRIGHT_$COLOR=%{$(echo -e "\033[${i_color}m")%}
+    let i_color++
+done
+
 
 # set formats
 # %b - branchname
@@ -70,6 +76,6 @@ function rprompt {
     RPROMPT="${PR_RESET}${bracket_open}${inner}${bracket_close}${PR_RESET}"
 }
  
-lprompt '[]' $PR_BRIGHT_BLACK $PR_WHITE
-rprompt '()' $PR_BRIGHT_BLACK $PR_WHITE
+lprompt '[]' $PR_REAL_BRIGHT_BLACK $PR_WHITE
+rprompt '()' $PR_REAL_BRIGHT_BLACK $PR_WHITE
 
