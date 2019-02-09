@@ -1,8 +1,5 @@
 # Set up the prompt
 
-#autoload -Uz promptinit
-#promptinit
-#prompt walters
 . ~/.zsh/Prompt/my.zsh
 # . /etc/zsh_command_not_found
 
@@ -79,14 +76,13 @@ source ~/.zsh/my/droid.zsh
 source ~/.zsh/rvm-stuff/rc.zsh
 
 
-PERL_MB_OPT="--install_base \"/Users/v_iskra/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/v_iskra/perl5"; export PERL_MM_OPT;
-
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+export CONDA_JL_HOME="/Users/v_iskra/anaconda3/envs/conda_jl"
+
+test -e '~/.zsh/my/local.zsh' && source '~/.zsh/my/local.zsh'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
