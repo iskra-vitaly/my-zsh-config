@@ -83,6 +83,6 @@ export LC_ALL=en_US.UTF-8
 export PATH="/usr/local/heroku/bin:$PATH"
 export CONDA_JL_HOME="/Users/v_iskra/anaconda3/envs/conda_jl"
 
-test -e '~/.zsh/my/local.zsh' && source '~/.zsh/my/local.zsh'
+test -e ~/.zsh/my/local.zsh && source ~/.zsh/my/local.zsh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
