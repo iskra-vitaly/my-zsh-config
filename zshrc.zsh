@@ -85,4 +85,4 @@ export CONDA_JL_HOME="/Users/v_iskra/anaconda3/envs/conda_jl"
 
 test -e ~/.zsh/my/local.zsh && source ~/.zsh/my/local.zsh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+[[ -e "${HOME}/.iterm2_shell_integration.zsh" && $TERM != "xterm-kitty" ]] && source "${HOME}/.iterm2_shell_integration.zsh" || true
